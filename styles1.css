@@ -1,0 +1,188 @@
+/* General styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* Soft background for contrast */
+    color: #333;
+    /* Dark text for readability */
+}
+
+header {
+    background-color: #444;
+    /* Darker header for depth */
+    color: white;
+    padding: 1.5rem 2rem;
+    /* Increased padding for a more spacious look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    display: flex;
+    /* Use flexbox for alignment */
+    justify-content: space-between;
+    /* Space out logo and nav */
+    align-items: center;
+    /* Center items vertically */
+}
+
+header .logo img {
+    width: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /* Flex layout for horizontal alignment */
+    gap: 2rem;
+    /* Increased gap for better spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #28a745;
+    /* Accent color on hover */
+}
+
+/* Shoe collection grid */
+.shoe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* Increased gap for better visual separation */
+    justify-content: center;
+    padding: 2rem;
+    /* Padding around the grid */
+}
+
+.shoe-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    padding: 1.5rem;
+    text-align: center;
+    width: 220px;
+    /* Slightly wider card */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Transition for hover effects */
+}
+
+.shoe-card:hover {
+    transform: translateY(-5px);
+    /* Elevate card on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
+}
+
+.shoe-card a {
+    text-decoration: none;
+    color: #333;
+    /* Dark text color for the card */
+}
+
+.shoe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Rounded image corners */
+}
+
+/* Product detail page */
+.product-detail {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: white;
+    /* White background for the detail section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.product-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    /* Rounded image corners */
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    /* Larger font for emphasis */
+    color: #444;
+    /* Accent color for the heading */
+}
+
+.product-info p {
+    font-size: 1.1rem;
+    /* Slightly smaller font size */
+    margin-bottom: 1rem;
+}
+
+.product-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-info ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    /* Consistent font size for details */
+}
+
+button {
+    background-color: #333;
+    /* Primary button color */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    /* Rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Transition for effects */
+}
+
+button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    transform: scale(1.05);
+    /* Slight grow effect on hover */
+}
+
+footer {
+    background-color: #444;
+    /* Matching footer color */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* Shadow above the footer */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .shoe-card {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .product-detail {
+        flex-direction: column;
+        /* Stack elements on small screens */
+        align-items: center;
+    }
+}
